@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Student Registration Form</title>
+<style>
+body {
+  background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3R1ZGVudCUyMGNvbXB1dGVyfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+.form-box {
+  background-color: rgba(255, 255, 255, 0.85); 
+  width: 500px;
+  margin: 60px auto; 
+  padding: 25px;
+  border-radius: 12px; 
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+}
+
+h1 {
+  text-align: center;
+  color:white;
+}
+</style>
+</head>
+<body>
+
+<h1>STUDENT REGISTRATION FORM</h1>
+
+<div class="form-box">
+<form>
+
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" placeholder="youremail@example.com">
+    <br><br>
+
+    <label>Title:</label><br>
+    <input type="radio" id="mr" name="title" value="Mr."><label for="mr"> Mr.</label>
+    <input type="radio" id="ms" name="title" value="Ms."><label for="ms"> Ms.</label>
+    <input type="radio" id="mrs" name="title" value="Mrs."><label for="mrs"> Mrs.</label>
+    <br><br>
+
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" placeholder="First Name">
+    <br><br>
+
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname" placeholder="Last Name">
+    <br><br>
+
+    <label for="address">Home Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="45" placeholder="Enter your home address here"></textarea>
+    <br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+    <br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male"><label for="male"> Male</label>
+    <input type="radio" id="female" name="gender" value="Female"><label for="female"> Female</label>
+    <input type="radio" id="other" name="gender" value="Other"><label for="other"> Other</label>
+    <br><br>
+
+    <label for="program">Select Program:</label><br>
+    <select id="program" name="program">
+        <option>Diploma in Information Technology</option>
+        <option>Diploma in Business Management</option>
+        <option>Diploma in Electrical Engineering</option>
+        <option>Diploma in Graphic Design</option>
+    </select>
+    <br><br>
+
+    <label for="intake">Preferred Intake:</label><br>
+    <select id="intake" name="intake">
+        <option>January Intake</option>
+        <option>May Intake</option>
+        <option>September Intake</option>
+    </select>
+    <br><br>
+
+    <h3>Emergency Contact</h3>
+
+    <label for="emname">Name:</label><br>
+    <input type="text" id="emname" name="emname" placeholder="Emergency Contact Name">
+    <br><br>
+
+    <label for="emphone">Phone No:</label><br>
+    <input type="tel" id="emphone" name="emphone" placeholder="Emergency Contact Phone">
+    <br><br>
+
+    <label for="relationship">Relationship:</label><br>
+    <input type="text" id="relationship" name="relationship" placeholder="e.g. Mother, Father, Guardian">
+    <br><br>
+
+    <label>Accommodation Required:</label><br>
+    <input type="radio" id="yes" name="accommodation" value="Yes"><label for="yes"> Yes</label>
+    <input type="radio" id="no" name="accommodation" value="No"><label for="no"> No</label>
+    <br><br>
+
+    <label for="remarks">Additional Remarks:</label><br>
+    <textarea id="remarks" name="remarks" rows="4" cols="45" placeholder="Enter any additional details here"></textarea>
+    <br><br>
+
+    <input type="submit" value="Register">
+
+</form>
+</div>
+
+</body>
+</html>
